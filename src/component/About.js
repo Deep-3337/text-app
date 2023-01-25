@@ -1,0 +1,37 @@
+import React from 'react'
+
+export default function About(props) {
+    document.title=`${props.title} | About Us`;
+
+    return (
+        <div className="container" style={{color : props.mode==='dark'?'white':'black'}}>
+            <h1 className="my-3">About Us</h1>
+            <div className="accordion" id="accordionExample">
+                {/* <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
+                    <button className="accordion-button" style={{color : props.mode==='dark'?'white':'black', backgroundColor :props.mode==='dark'?'black':'white'}} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Jagriti
+                    </button>
+                    </h2>
+                    <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div className="accordion-body" style={{color : props.mode==='dark'?'white':'black', backgroundColor :props.mode==='dark'?'black':'white'}}>
+                    My name is Jagriti and currently i'm pursuing MCA from MSU. This appliation is a project build with Deep for WTP.
+                    </div>
+                    </div>
+                </div> */}
+                <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingTwo">
+                    <button className="accordion-button collapsed" style={{color : props.mode==='dark'?'white':'black', backgroundColor :props.mode==='dark'?'black':'white'}} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Deep
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div className="accordion-body" style={{color : props.mode==='dark'?'white':'black', backgroundColor :props.mode==='dark'?'black':'white'}}>
+                    My name is Deep and currently i'm pursuing MCA from MSU. This appliation is a project build with Jagriti for WTP.
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
